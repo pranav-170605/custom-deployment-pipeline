@@ -124,5 +124,5 @@ All containers share a single `app-network` bridge. Services communicate using D
 
 ## Author
 
-**Pranav** — Electronics & Telecommunications Engineering  
+**Pranav** 
 [GitHub Profile](https://github.com/pranav)
