@@ -108,8 +108,8 @@ pipeline {
                 sh """
                     rm -rf frontend/.next frontend/node_modules/.cache || true
 
-                    find frontend/src/ -name "axios.tsx" -exec sed -i 's|baseURL: "http://192.168.4.201:31211"|baseURL: "http://127.0.0.1:8000"|g' {} + || true
-                    find frontend/src/ -name "axios.ts" -exec sed -i 's|baseURL: "http://192.168.4.201:31211"|baseURL: "http://127.0.0.1:8000"|g' {} + || true
+                    find frontend/src/ -name "axios.tsx" -exec sed -i 's|baseURL: "http://192.168.4.201:31211"|baseURL: "http://192.168.49.2:30080"|g' {} + || true
+                    find frontend/src/ -name "axios.ts" -exec sed -i 's|baseURL: "http://192.168.4.201:31211"|baseURL: "http://192.168.49.2:30080"|g' {} + || true
 
                     find frontend/src/ -type f -exec sed -i 's|"/register"|"/users/register"|g' {} + || true
                     find frontend/src/ -type f -exec sed -i "s|'/register'|'/users/register'|g" {} + || true
