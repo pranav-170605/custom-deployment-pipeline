@@ -1,0 +1,23 @@
+# Company source code - never push these
+backend/app/
+frontend/src/
+frontend/node_modules/
+frontend/.next/
+
+# Kubernetes secrets
+k8s/secret.yaml
+
+# Environment files
+.env
+.env.local
+.env.production
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Credentials
+.netrc
+*.pem
+*.key
